@@ -1,4 +1,4 @@
-const gabarito = "VENTO";
+const gabarito = "VENTO"; //mat
 
 const linha1 = document.getElementById("L1");
 const linha2 = document.getElementById("L2");
@@ -18,13 +18,6 @@ const btn = document.querySelectorAll(".btntest");
 
 const palavraGabarito = gabarito.split("");
 
-// function win() {
-//     if (linha1 == gabarito || linha2 == gabarito) {
-//         console.log("Você ganhou!")
-//     }
-//         return
-// }
-
 function testar(e) {
   // o e, é o evento de click
   //o currentTarget é o nosso botão
@@ -38,8 +31,10 @@ function testar(e) {
     palavraPorLetra.join("").toLowerCase() ===
     palavraGabarito.join("").toLowerCase()
   ) {
-    alert("Parabéns!!! Você Acertou!!!");
-  }
+    alert("Parabéns!!! Você Acertou!!!")
+    document.location.reload(true);
+  } 
+  
 
   //pegando o id do input para pegar o número e utilizar para pegar a linha
   const inputId = input.id.slice(-1);
@@ -64,7 +59,7 @@ function testar(e) {
       palavraPorLetra.indexOf(current) !==
         palavraGabarito.join("").charAt(palavraPorLetra.indexOf(current))
     ) {
-      letra1.style.backgroundColor = "goldenrod";
+      letra1.style.backgroundColor = "tomato";
     }
     letra1.innerText = current;
     linha.appendChild(letra1);
@@ -75,11 +70,12 @@ function testar(e) {
 
 btn.forEach((current) => {
   current.addEventListener("click", () => testar(event));
+  
 });
 
-// document.addEventListener("keyup")
+// contador, a cada clique no testar vai aumentar 1, quando for igual 6, vc perde. dentro da função testar, if contador = 6
 
-//DEIXAR COMENTÁRIOS AQUI, FALANDO SOBRE AS FUNÇÕES. precisa ter classe.
+
 
 
 

@@ -1,0 +1,8 @@
+html, body {background-color: #333;}
+.btntest {margin: 10px;}
+.div1 {width: 778px; margin: auto; text-align: center; }
+.h1 {font-family: 'Nabla', cursive; background-color: black; text-align: center; padding: 2%;}
+.h2 {font-family: 'DynaPuff', cursive; font-size: 2em; font-weight: bold; color: #333;}
+.t2 {font-family: 'DynaPuff', cursive; font-size: 2em; font-weight: bold; color: #999;}
+.res {padding:1%; font-family: 'DynaPuff', cursive; font-size: 1.6em; padding: 2%; font-stretch: ultra-expanded;}
+button, input, optgroup, select, textarea {background-color: #999; min-height: 2em; }

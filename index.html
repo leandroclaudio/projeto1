@@ -5,36 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LETRA</title>
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="letra.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Silkscreen&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div>
-      <h1>LETRA</h1>
-      <input type="text" name="L1" id="L1" maxlength="5" minlength="5" />
-      <button class="btntest">Testar</button> <br />
-      <input type="text" name="L2" id="L2" maxlength="5" minlength="5" />
-      <button class="btntest">Testar</button> <br />
-      <input type="text" name="L3" id="L3" maxlength="5" minlength="5" />
-      <button class="btntest">Testar</button> <br />
-      <input type="text" name="L4" id="L4" maxlength="5" minlength="5" />
-      <button class="btntest">Testar</button> <br />
-      <input type="text" name="L5" id="L5" maxlength="5" minlength="5" />
-      <button class="btntest">Testar</button> <br />
-      <input type="text" name="L6" id="L6" maxlength="5" minlength="5" />
-      <button class="btntest">Testar</button> <br />
+    <div class="div1">
+        <h1 class="h1" style="margin: 0;">LETRA 1.0</h1>
+        <div style="width:50%; float: left; min-height: 450px; padding-top: 2em;">
+            <h2 class="t2">PALAVRA:</h2>
+            <input type="text" name="L1" id="L1" maxlength="5" minlength="5" />
+            <button class="btntest btn btn-primary">Testar</button> <br />
+            <input type="text" name="L2" id="L2" maxlength="5" minlength="5" />
+            <button class="btntest btn btn-primary">Testar</button> <br />
+            <input type="text" name="L3" id="L3" maxlength="5" minlength="5" />
+            <button class="btntest btn btn-primary">Testar</button> <br />
+            <input type="text" name="L4" id="L4" maxlength="5" minlength="5" />
+            <button class="btntest btn btn-primary">Testar</button> <br />
+            <input type="text" name="L5" id="L5" maxlength="5" minlength="5" />
+            <button class="btntest btn btn-primary">Testar</button> <br />
+            <input type="text" name="L6" id="L6" maxlength="5" minlength="5" />
+            <button class="btntest btn btn-primary">Testar</button> <br />
+        </div>
+        <div style="width:50%; background-color: #999; float: left; min-height: 450px; padding-top: 2em;">
+            <h2 class="h2">ACERTOS:</h2>
+            <div id="res1" class="res"></div>
+            <div id="res2" class="res"></div>
+            <div id="res3" class="res"></div>
+            <div id="res4" class="res"></div>
+            <div id="res5" class="res"></div>
+            <div id="res6" class="res"></div>     
+        </div>
+  
     </div>
 
-    <h2>Placar:</h2>
-    <div id="res1"></div>
-    <div id="res2"></div>
-    <div id="res3"></div>
-    <div id="res4"></div>
-    <div id="res5"></div>
-    <div id="res6"></div>
 
     <script src="letra.js"></script>
-    <!--lógica (OPP)-->
-    <script src="dom.js"></script>
+    <!--lógica (OPP)-->    
     <!--DOM conversar com o HTML e o CSS-->
     <!--teste-->
   </body>
